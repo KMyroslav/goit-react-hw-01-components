@@ -1,3 +1,5 @@
+import propTypes from "prop-types";
+
 const Friends = ({ arr }) => {
   return (
     <ul className="friend-list">
@@ -20,6 +22,10 @@ const Friends = ({ arr }) => {
       })}
     </ul>
   );
+};
+
+Friends.propTypes = {
+  arr: propTypes.arrayOf(propTypes.object).isRequired,
 };
 
 export default Friends;

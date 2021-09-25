@@ -1,3 +1,5 @@
+import propTypes from "prop-types";
+
 const SocialProfile = ({ name, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
@@ -24,6 +26,14 @@ const SocialProfile = ({ name, tag, location, avatar, stats }) => {
       </ul>
     </div>
   );
+};
+
+SocialProfile.propTypes = {
+  name: propTypes.string,
+  tag: propTypes.string,
+  location: propTypes.string,
+  avatar: propTypes.string,
+  stats: propTypes.objectOf(propTypes.number),
 };
 
 export default SocialProfile;
