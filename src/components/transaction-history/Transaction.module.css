@@ -1,0 +1,22 @@
+.transactionHistory {
+  text-align: center;
+  width: 280px;
+}
+
+.tHead {
+  color: #fff;
+  background-color: rgb(28, 221, 221);
+}
+
+.tHeadRow th {
+  padding: 7px 0;
+}
+
+.tBody td {
+  color: rgb(104, 104, 104);
+  padding: 7px 0;
+}
+
+.tBodyRow:nth-child(2n) {
+  background-color: rgba(122, 122, 122, 0.151);
+}
