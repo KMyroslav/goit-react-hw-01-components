@@ -4,7 +4,7 @@ import propTypes from "prop-types";
 const Statistic = ({ stats, title }) => {
   return (
     <section className={styles.statistics}>
-      {true && <h2 className={styles.title}>{title}</h2>}
+      {title && <h2 className={styles.title}>{title}</h2>}
       <ul className={`${styles.statList} list`}>
         {stats
           .sort((a, b) => b.percentage - a.percentage)
